@@ -35,12 +35,32 @@ async function main() {
     else if (/taro/.test(cur.name)) {
       acc.taro = [...(acc.taro || []), cur]
     }
+    else if (/weapp-vite/.test(cur.name)) {
+      acc['weapp-vite'] = [...(acc['weapp-vite'] || []), cur]
+    }
+    else if (/mpx/.test(cur.name)) {
+      acc.mpx = [...(acc.mpx || []), cur]
+    }
+    else if (/native/.test(cur.name) && /weapp/.test(cur.name)) {
+      acc['native-weapp'] = [...(acc['native-weapp'] || []), cur]
+    }
+    else if (/vue-mini/.test(cur.name)) {
+      acc['vue-mini'] = [...(acc['vue-mini'] || []), cur]
+    }
     else if (/vue/.test(cur.name)) {
       acc.vue = [...(acc.vue || []), cur]
+    }
+    else if (/react/.test(cur.name)) {
+      acc.react = [...(acc.react || []), cur]
+    }
+    else {
+      console.log(cur.name)
     }
 
     return acc
   }, {})
+
+  console.log(res.data.length, Object.values(map).reduce((acc, cur) => acc + cur.length, 0))
 
   function generateFragment(key: string) {
     if (Array.isArray(map[key])) {
@@ -57,12 +77,14 @@ async function main() {
   const data = [
     '# icebreaker 的模板集中营',
     '',
-    generateFragment('uni-app'),
-    '',
-    generateFragment('taro'),
-    '',
-    generateFragment('vue'),
-
+    Object.keys(map).reduce((acc, key) => {
+      const fragment = generateFragment(key)
+      if (fragment) {
+        acc.push(fragment)
+        acc.push('')
+      }
+      return acc
+    }, [] as string[]).join('\n'),
   ].join('\n')
   await fs.writeFile(
     path.resolve(import.meta.dirname, './profile/README.md'),
