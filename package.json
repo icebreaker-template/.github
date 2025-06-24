@@ -1,20 +1,24 @@
 {
   "name": "icebreaker-template-github",
+  "type": "module",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.12.3",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "readme": "tsx ."
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "start": "tsx ."
+  },
   "devDependencies": {
+    "@icebreakers/eslint-config": "^1.2.1",
     "@types/fs-extra": "^11.0.4",
-    "axios": "^1.9.0",
+    "axios": "^1.10.0",
+    "eslint": "^9.29.0",
     "fs-extra": "^11.3.0",
     "pathe": "^2.0.3",
-    "tsx": "^4.19.3"
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
