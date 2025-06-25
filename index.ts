@@ -99,7 +99,7 @@ async function main() {
     if (Array.isArray(map[key].items)) {
       if (key === 'uni-app') {
         const result = Object.entries(map[key].items.reduce<ReposMap>((acc, cur) => {
-          if (/hbuilderx/.test(cur.name)) {
+          if (/hbuilder/.test(cur.name)) {
             acc.hbuilderx = {
               items: [...(acc.hbuilderx?.items || []), cur],
               order: 0,

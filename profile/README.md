@@ -6,13 +6,13 @@
 
 - [uni-app-vue2-tailwind-vscode-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-vscode-template) uni-app-vue2-tailwind-vscode-template
 - [uni-app-vue3-for-amap-wx](https://github.com/icebreaker-template/uni-app-vue3-for-amap-wx)
-- [uni-app-vue2-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template) uni-app-vue2-tailwind-hbuilder-template
-- [uni-app-vue3-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template) uni-app-vue3-tailwind-hbuilder-template
 - [uni-app-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-tailwindcss-v4)
 - [uni-app-webpack-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-webpack-tailwindcss-v4)
 
 ### hbuilderx
 
+- [uni-app-vue2-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template) uni-app-vue2-tailwind-hbuilder-template
+- [uni-app-vue3-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template) uni-app-vue3-tailwind-hbuilder-template
 - [uni-app-hbuilderx-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-hbuilderx-tailwindcss-v4)
 - [uni-app-x-hbuilderx](https://github.com/icebreaker-template/uni-app-x-hbuilderx)
 
