@@ -22,62 +22,97 @@ function getRepos() {
   return axios.get<Repo[]>('https://api.github.com/orgs/icebreaker-template/repos?per_page=100')
 }
 
+type ReposMap = Record<string, {
+  items: Repo[]
+  order: number
+}>
+
 async function main() {
   const res = await getRepos()
 
-  const map = res.data.reduce<Record<string, Repo[]>>((acc, cur) => {
+  const map = res.data.reduce<ReposMap>((acc, cur) => {
     if (cur.archived) {
       return acc
     }
     if (/uni-app/.test(cur.name)) {
-      acc['uni-app'] = [...(acc['uni-app'] || []), cur]
+      acc['uni-app'] = {
+        items: [...(acc['uni-app']?.items || []), cur],
+        order: 8
+      }
     }
     else if (/taro/.test(cur.name)) {
-      acc.taro = [...(acc.taro || []), cur]
+      acc.taro = {
+        items: [...(acc.taro?.items || []), cur],
+        order: 7
+      }
     }
     else if (/weapp-vite/.test(cur.name)) {
-      acc['weapp-vite'] = [...(acc['weapp-vite'] || []), cur]
+      acc['weapp-vite'] = {
+        items: [...(acc['weapp-vite']?.items || []), cur],
+        order: 6
+      }
     }
     else if (/mpx/.test(cur.name)) {
-      acc.mpx = [...(acc.mpx || []), cur]
+      acc.mpx = {
+        items: [...(acc.mpx?.items || []), cur],
+        order: 5
+      }
     }
     else if (/native/.test(cur.name) && /weapp/.test(cur.name)) {
-      acc['native-weapp'] = [...(acc['native-weapp'] || []), cur]
+      acc['native-weapp'] = {
+        items: [...(acc['native-weapp']?.items || []), cur],
+        order: 4
+      }
     }
     else if (/vue-mini/.test(cur.name)) {
-      acc['vue-mini'] = [...(acc['vue-mini'] || []), cur]
+      acc['vue-mini'] = {
+        items: [...(acc['vue-mini']?.items || []), cur],
+        order: 3
+      }
     }
     else if (/vue/.test(cur.name)) {
-      acc.vue = [...(acc.vue || []), cur]
+      acc.vue = {
+        items: [...(acc.vue?.items || []), cur],
+        order: 2
+      }
     }
     else if (/react/.test(cur.name)) {
-      acc.react = [...(acc.react || []), cur]
+      acc.react = {
+        items: [...(acc.react?.items || []), cur],
+        order: 1
+      }
     }
     else {
       console.log(cur.name)
+      acc.other = {
+        items: [...(acc.other?.items || []), cur],
+        order: 0
+      }
     }
 
     return acc
   }, {})
 
-  console.log(res.data.length, Object.values(map).reduce((acc, cur) => acc + cur.length, 0))
+  console.log(res.data.length, Object.values(map).reduce((acc, cur) => acc + cur.items.length, 0))
 
   function generateFragment(key: string) {
-    if (Array.isArray(map[key])) {
+    if (Array.isArray(map[key].items)) {
       return [
         `## ${key}`,
         '',
-        ...map[key].map((x) => {
+        ...map[key].items.map((x) => {
           return `- [${x.name}](${x.html_url}) ${x.description ?? ''}`
         }),
       ].join('\n')
     }
   }
-
-  const data = [
+  const sortedItems = Object.entries(map).sort(([, { order: orderA }], [, { order: orderB }]) => {
+    return orderB - orderA
+  })
+  const readme = [
     '# icebreaker 的模板集中营',
     '',
-    Object.keys(map).reduce((acc, key) => {
+    sortedItems.reduce((acc, [key]) => {
       const fragment = generateFragment(key)
       if (fragment) {
         acc.push(fragment)
@@ -88,7 +123,7 @@ async function main() {
   ].join('\n')
   await fs.writeFile(
     path.resolve(import.meta.dirname, './profile/README.md'),
-    data,
+    readme,
     'utf8',
   )
 }
