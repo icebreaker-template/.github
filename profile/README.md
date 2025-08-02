@@ -14,7 +14,7 @@
 - [uni-app-vue2-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template) uni-app-vue2-tailwind-hbuilder-template
 - [uni-app-vue3-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template) uni-app-vue3-tailwind-hbuilder-template
 - [uni-app-hbuilderx-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-hbuilderx-tailwindcss-v4)
-- [uni-app-x-hbuilderx](https://github.com/icebreaker-template/uni-app-x-hbuilderx)
+- [uni-app-x-hbuilderx](https://github.com/icebreaker-template/uni-app-x-hbuilderx) weapp-tailwindcss & uni-app x 模板
 
 ## taro
 
