@@ -4,10 +4,10 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -20,11 +20,20 @@ jobs:
         node-version: [22.x]
 
     steps:
-    - uses: actions/checkout@v5
-    - uses: pnpm/action-setup@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Generate README.md
+        run: pnpm start
+      - name: git commit files
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: icebreaker-bot
+          author_email: 1324318532@qq.com
+          add: '*.md'
