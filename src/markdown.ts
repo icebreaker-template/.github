@@ -1,33 +1,7 @@
-import axios from 'axios'
-import fs from 'fs-extra'
-import path from 'pathe'
+import type { ReposMap } from './repos'
+import { getRepos } from './repos'
 
-interface Repo {
-  name: string
-  full_name: string
-  archived: boolean
-  created_at: string
-  description: string
-  disabled: boolean
-  downloads_url: string
-  forks_count: number
-  is_template: boolean
-  language: string
-  stargazers_count: number
-  html_url: string
-  pushed_at: string
-  updated_at: string
-}
-function getRepos() {
-  return axios.get<Repo[]>('https://api.github.com/orgs/icebreaker-template/repos?per_page=100')
-}
-
-type ReposMap = Record<string, {
-  items: Repo[]
-  order: number
-}>
-
-async function main() {
+export async function generate() {
   const res = await getRepos()
 
   const map = res.data.reduce<ReposMap>((acc, cur) => {
@@ -154,11 +128,5 @@ async function main() {
       return acc
     }, [] as string[]).join('\n'),
   ].join('\n')
-  await fs.writeFile(
-    path.resolve(import.meta.dirname, './profile/README.md'),
-    readme,
-    'utf8',
-  )
+  return readme
 }
-
-main()
