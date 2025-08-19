@@ -35,7 +35,6 @@
 ## native-weapp
 
 - [weapp-native-mina-tailwindcss-template](https://github.com/icebreaker-template/weapp-native-mina-tailwindcss-template) 小程序工程化实践
-- [native-weapp-tailwindcss-template](https://github.com/icebreaker-template/native-weapp-tailwindcss-template) 纯原生微信小程序开发模板
 
 ## vue-mini
 
