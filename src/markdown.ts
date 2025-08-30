@@ -96,7 +96,7 @@ export async function generate() {
             acc.push(`### ${key}`)
             acc.push('')
             items.forEach((x) => {
-              acc.push(`- [${x.name}](${x.html_url}) ${x.description ?? ''} ${githubStar(x.name)}`)
+              acc.push(`- [${x.name}](${x.html_url}) ${githubStar(x.name)} ${x.description ?? ''}`)
             })
             return acc
           }, [])
@@ -111,7 +111,7 @@ export async function generate() {
           `## ${key}`,
           '',
           ...map[key].items.map((x) => {
-            return `- [${x.name}](${x.html_url}) ${x.description ?? ''} ${githubStar(x.name)}`
+            return `- [${x.name}](${x.html_url}) ${githubStar(x.name)} ${x.description ?? ''}`
           }),
         ].join('\n')
       }
