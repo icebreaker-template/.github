@@ -4,58 +4,58 @@
 
 ### cli
 
-- [uni-app-vue2-tailwind-vscode-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-vscode-template) uni-app-vue2-tailwind-vscode-template
-- [uni-app-vue3-for-amap-wx](https://github.com/icebreaker-template/uni-app-vue3-for-amap-wx)
-- [uni-app-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-tailwindcss-v4)
-- [uni-app-webpack-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-webpack-tailwindcss-v4)
+- [uni-app-vue2-tailwind-vscode-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-vscode-template) uni-app-vue2-tailwind-vscode-template ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-vue2-tailwind-vscode-template)
+- [uni-app-vue3-for-amap-wx](https://github.com/icebreaker-template/uni-app-vue3-for-amap-wx) ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-vue3-for-amap-wx)
+- [uni-app-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-tailwindcss-v4)
+- [uni-app-webpack-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-webpack-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-webpack-tailwindcss-v4)
 
 ### hbuilderx
 
-- [uni-app-vue2-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template) uni-app-vue2-tailwind-hbuilder-template
-- [uni-app-vue3-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template) uni-app-vue3-tailwind-hbuilder-template
-- [uni-app-hbuilderx-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-hbuilderx-tailwindcss-v4)
-- [uni-app-x-hbuilderx](https://github.com/icebreaker-template/uni-app-x-hbuilderx) weapp-tailwindcss & uni-app x 模板
+- [uni-app-vue2-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template) uni-app-vue2-tailwind-hbuilder-template ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-vue2-tailwind-hbuilder-template)
+- [uni-app-vue3-tailwind-hbuilder-template](https://github.com/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template) uni-app-vue3-tailwind-hbuilder-template ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-vue3-tailwind-hbuilder-template)
+- [uni-app-hbuilderx-tailwindcss-v4](https://github.com/icebreaker-template/uni-app-hbuilderx-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-hbuilderx-tailwindcss-v4)
+- [uni-app-x-hbuilderx](https://github.com/icebreaker-template/uni-app-x-hbuilderx) weapp-tailwindcss & uni-app x 模板 ![](https://img.shields.io/github/stars/icebreaker-template/uni-app-x-hbuilderx)
 
 ## taro
 
-- [taro-react-tailwind-vscode-template](https://github.com/icebreaker-template/taro-react-tailwind-vscode-template) taro-react-tailwind-vscode-template
-- [taro-react-pandacss-template](https://github.com/icebreaker-template/taro-react-pandacss-template)
-- [taro-vue3-tailwind-vscode-template](https://github.com/icebreaker-template/taro-vue3-tailwind-vscode-template)
-- [taro-vite-tailwindcss-v4](https://github.com/icebreaker-template/taro-vite-tailwindcss-v4)
-- [taro-webpack-tailwindcss-v4](https://github.com/icebreaker-template/taro-webpack-tailwindcss-v4)
+- [taro-react-tailwind-vscode-template](https://github.com/icebreaker-template/taro-react-tailwind-vscode-template) taro-react-tailwind-vscode-template ![](https://img.shields.io/github/stars/icebreaker-template/taro-react-tailwind-vscode-template)
+- [taro-react-pandacss-template](https://github.com/icebreaker-template/taro-react-pandacss-template) ![](https://img.shields.io/github/stars/icebreaker-template/taro-react-pandacss-template)
+- [taro-vue3-tailwind-vscode-template](https://github.com/icebreaker-template/taro-vue3-tailwind-vscode-template) ![](https://img.shields.io/github/stars/icebreaker-template/taro-vue3-tailwind-vscode-template)
+- [taro-vite-tailwindcss-v4](https://github.com/icebreaker-template/taro-vite-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/taro-vite-tailwindcss-v4)
+- [taro-webpack-tailwindcss-v4](https://github.com/icebreaker-template/taro-webpack-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/taro-webpack-tailwindcss-v4)
 
 ## weapp-vite
 
-- [weapp-vite-tailwindcss-template](https://github.com/icebreaker-template/weapp-vite-tailwindcss-template) 废弃！！新的模板地址见 README.md
+- [weapp-vite-tailwindcss-template](https://github.com/icebreaker-template/weapp-vite-tailwindcss-template) 废弃！！新的模板地址见 README.md ![](https://img.shields.io/github/stars/icebreaker-template/weapp-vite-tailwindcss-template)
 
 ## mpx
 
-- [mpx-tailwindcss-v4](https://github.com/icebreaker-template/mpx-tailwindcss-v4)
+- [mpx-tailwindcss-v4](https://github.com/icebreaker-template/mpx-tailwindcss-v4) ![](https://img.shields.io/github/stars/icebreaker-template/mpx-tailwindcss-v4)
 
 ## native-weapp
 
-- [weapp-native-mina-tailwindcss-template](https://github.com/icebreaker-template/weapp-native-mina-tailwindcss-template) 小程序工程化实践
+- [weapp-native-mina-tailwindcss-template](https://github.com/icebreaker-template/weapp-native-mina-tailwindcss-template) 小程序工程化实践 ![](https://img.shields.io/github/stars/icebreaker-template/weapp-native-mina-tailwindcss-template)
 
 ## vue-mini
 
-- [vue-mini-tailwindcss-template](https://github.com/icebreaker-template/vue-mini-tailwindcss-template)
+- [vue-mini-tailwindcss-template](https://github.com/icebreaker-template/vue-mini-tailwindcss-template) ![](https://img.shields.io/github/stars/icebreaker-template/vue-mini-tailwindcss-template)
 
 ## vue
 
-- [universal-vue-library-template](https://github.com/icebreaker-template/universal-vue-library-template) universal-vue-library-template
-- [vite-vue2-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-vue2-ts-tailwindcss-template) 🚀 Vite + Vue2 + Tailwindcss + TypeScript Starter Template
-- [vite-vue3-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-vue3-ts-tailwindcss-template)
+- [universal-vue-library-template](https://github.com/icebreaker-template/universal-vue-library-template) universal-vue-library-template ![](https://img.shields.io/github/stars/icebreaker-template/universal-vue-library-template)
+- [vite-vue2-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-vue2-ts-tailwindcss-template) 🚀 Vite + Vue2 + Tailwindcss + TypeScript Starter Template ![](https://img.shields.io/github/stars/icebreaker-template/vite-vue2-ts-tailwindcss-template)
+- [vite-vue3-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-vue3-ts-tailwindcss-template) ![](https://img.shields.io/github/stars/icebreaker-template/vite-vue3-ts-tailwindcss-template)
 
 ## react
 
-- [vite-react-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-react-ts-tailwindcss-template) vite-react-ts-tailwindcss-template
+- [vite-react-ts-tailwindcss-template](https://github.com/icebreaker-template/vite-react-ts-tailwindcss-template) vite-react-ts-tailwindcss-template ![](https://img.shields.io/github/stars/icebreaker-template/vite-react-ts-tailwindcss-template)
 
 ## other
 
-- [serverless-nuxt3-template](https://github.com/icebreaker-template/serverless-nuxt3-template) A serverless-nuxt3-taiwindcss template Hosted by Tencent Cloud SCF
-- [serverless-devs-nestjs](https://github.com/icebreaker-template/serverless-devs-nestjs) 多种方式使用 `serverless-devs` 把 `nestjs` 部署到阿里云函数计算
-- [weapp-tailwindcss-template-hub](https://github.com/icebreaker-template/weapp-tailwindcss-template-hub) 小程序使用 tailwindcss 的模板集合 weapp-tailwindcss-template-hub
-- [ppt-template](https://github.com/icebreaker-template/ppt-template) ppt-template
-- [npm-proxy-verdaccio](https://github.com/icebreaker-template/npm-proxy-verdaccio) npm-proxy-verdaccio
-- [vite-raw-template](https://github.com/icebreaker-template/vite-raw-template)
-- [.github](https://github.com/icebreaker-template/.github)
+- [serverless-nuxt3-template](https://github.com/icebreaker-template/serverless-nuxt3-template) A serverless-nuxt3-taiwindcss template Hosted by Tencent Cloud SCF ![](https://img.shields.io/github/stars/icebreaker-template/serverless-nuxt3-template)
+- [serverless-devs-nestjs](https://github.com/icebreaker-template/serverless-devs-nestjs) 多种方式使用 `serverless-devs` 把 `nestjs` 部署到阿里云函数计算 ![](https://img.shields.io/github/stars/icebreaker-template/serverless-devs-nestjs)
+- [weapp-tailwindcss-template-hub](https://github.com/icebreaker-template/weapp-tailwindcss-template-hub) 小程序使用 tailwindcss 的模板集合 weapp-tailwindcss-template-hub ![](https://img.shields.io/github/stars/icebreaker-template/weapp-tailwindcss-template-hub)
+- [ppt-template](https://github.com/icebreaker-template/ppt-template) ppt-template ![](https://img.shields.io/github/stars/icebreaker-template/ppt-template)
+- [npm-proxy-verdaccio](https://github.com/icebreaker-template/npm-proxy-verdaccio) npm-proxy-verdaccio ![](https://img.shields.io/github/stars/icebreaker-template/npm-proxy-verdaccio)
+- [vite-raw-template](https://github.com/icebreaker-template/vite-raw-template) ![](https://img.shields.io/github/stars/icebreaker-template/vite-raw-template)
+- [.github](https://github.com/icebreaker-template/.github) ![](https://img.shields.io/github/stars/icebreaker-template/.github)

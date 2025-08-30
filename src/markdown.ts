@@ -1,6 +1,10 @@
 import type { ReposMap } from './repos'
 import { getRepos } from './repos'
 
+function githubStar(repoName: string) {
+  return `![](https://img.shields.io/github/stars/icebreaker-template/${repoName})`
+}
+
 export async function generate() {
   const res = await getRepos()
 
@@ -92,7 +96,7 @@ export async function generate() {
             acc.push(`### ${key}`)
             acc.push('')
             items.forEach((x) => {
-              acc.push(`- [${x.name}](${x.html_url}) ${x.description ?? ''}`)
+              acc.push(`- [${x.name}](${x.html_url}) ${x.description ?? ''} ${githubStar(x.name)}`)
             })
             return acc
           }, [])
@@ -107,7 +111,7 @@ export async function generate() {
           `## ${key}`,
           '',
           ...map[key].items.map((x) => {
-            return `- [${x.name}](${x.html_url}) ${x.description ?? ''}`
+            return `- [${x.name}](${x.html_url}) ${x.description ?? ''} ${githubStar(x.name)}`
           }),
         ].join('\n')
       }
